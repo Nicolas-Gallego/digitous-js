@@ -72,43 +72,37 @@ if (random === 6) {
 }
 
 // Bonus II
-var month = "July"
+var month = "March"
 
 switch (month) {
     case "January":
-        console.log("Winter");
-        break;
     case "February":
-        console.log("Winter");
-        break;
     case "March":
         console.log("Winter");
         break;
     case "April":
-        console.log("Spring");
-        break;
     case "May":
-        console.log("Spring");
-        break;
     case "June":
         console.log("Spring");
         break;
     case "July":
-        console.log("Summer");
-        break;
     case "August":
-        console.log("Summer");
-        break;
     case "September":
         console.log("Summer");
         break;
     case "October":
-        console.log("Fall");
-        break;
     case "November":
-        console.log("Fall");
-        break;
     case "December":
         console.log("Fall");
         break;
+}
+
+// Bonus III
+var roundedNumber = 3.3
+var decimal = (roundedNumber - Math.floor(roundedNumber))
+if (decimal >= 0.5) {
+    console.log(Math.ceil(roundedNumber))
+} else {
+    console.log(Math.floor(roundedNumber))
+
 }
