@@ -25,5 +25,37 @@ console.log(test ** bis);
 console.log(test % bis);
 
 // Comparaison
-var test = 143
-var bis = 219
+var test = 143;
+var bis = 219;
+console.log(test > bis);
+console.log(test >= bis);
+console.log(test < bis);
+console.log(test <= bis);
+console.log(test == bis);
+console.log(test === bis);
+console.log(test != bis);
+console.log(test !== bis);
+
+// Condition
+var limit = 50
+var score = 6
+if (score >= limit) {
+    console.log("Ok good !")
+} else {
+    console.log("Oh noooo...")
+}
+
+// Condition II
+var password = "azert";
+if (password.length > 5) {
+    console.log("The password is secured");
+}
+
+// Condition III
+if (score >= limit && password.length > 5) {
+    console.log("Everything is good")
+} else if (score >= limit || password.length > 5) {
+    console.log("Something is good")
+} else {
+    console.log("Nothing is good")
+}
