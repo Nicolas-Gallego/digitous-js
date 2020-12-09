@@ -30,4 +30,8 @@ for (var total; total <= limit; total++) {
 
 // 06 - Reverse
 var sentence = "Hello Konexio !"
-for ()
+var reverseStr =""
+for(var i = sentence.length -1; i >= 0; i--){
+reverseStr = reverseStr + sentence[i]
+}
+console.log(reverseStr)
