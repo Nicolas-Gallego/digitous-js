@@ -16,3 +16,18 @@ objects.shift()
 console.log(objects);
 
 // 04 - Order
+var numbers = [4, 10, 8, 12, 6]
+numbers.reverse();
+numbers.sort((a, b) => a - b);
+console.log(numbers);
+
+// 05 - Boucle
+var total = 0
+var limit = 10
+for (var total; total <= limit; total++) {
+    console.log(total)
+}
+
+// 06 - Reverse
+var sentence = "Hello Konexio !"
+for ()
