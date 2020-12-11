@@ -11,7 +11,7 @@ var multiple = 0
 var result1 = 0
 for (i = 100; i <= 1000; i++) {
     if (i % 7 === 0) {
-    }console.log(result1)
+    } console.log(result1)
 }
 
 // 03 Chanceux
@@ -27,4 +27,15 @@ for (var i = 1; i <= 20; i++) {
 } console.log(dice)
 
 
+// WHILE 
 
+// 01 Comptons
+var start = 50
+while (i < 201) {
+    i++
+    if (i >= 50 && i % 2 === 0) {
+        console.log(i)
+    }
+}
+
+// 02
