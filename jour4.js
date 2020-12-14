@@ -58,12 +58,17 @@ compare(2, 2)
 var result = 0
 function addUp(num) {
     for (var i = 1; i <= num; i++)
-    result += i
+        result += i
     console.log(result)
- }
+}
 addUp(12)
 
 
 // 06 - Time
-
-
+function format(num) {
+    var hrs = Math.floor(num / 3600);
+    var mins = Math.floor((num % 3600) / 60);
+    var secs = Math.floor(num % 60);
+    console.log(`${hrs}:${mins}:${secs}`)
+}
+format(3700)
