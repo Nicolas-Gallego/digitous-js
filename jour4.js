@@ -72,3 +72,52 @@ function format(num) {
     console.log(`${hrs}:${mins}:${secs}`)
 }
 format(3700)
+
+// Bonus 
+function generatePassword(num) {
+    var result = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var charactersLength = characters.length;
+    for (var i = 0; i < num; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    if (result.length > 15 || result.length < 6) {
+        console.log("error")
+    }
+    else {
+        console.log(result)
+    }
+}
+generatePassword(14)
+
+
+// Bonus II
+var joueur1 = 0
+var joueur2 = 0
+function launchDice(numberOfDice) {
+    var somme = 0
+    var max = 6;
+    var min = 1;
+    for (var i = 1; i <= numberOfDice; i++) {
+        var random = Math.floor(Math.random() * (max - min + 1) + min)
+        somme += random;
+    }
+    console.log(somme);
+    return somme
+}
+
+var joueur1 = launchDice(5)
+var joueur2 = launchDice(5)
+//console.log(joueur1 > joueur2 ? "Joueur 1" : "Joueur 2" + " a gagné"); N'affiche pas "à gagné" si le joueur 1 l'emporte
+if (joueur1 > joueur2) {
+    console.log(`Le joueur 1 gagne avec ${joueur1} points contre ${joueur2}`)
+}
+else if (joueur1 < joueur2) {
+    console.log(`Le joueur 2 gagne avec ${joueur2} points contre ${joueur1}`)
+}
+
+else{
+    console.log(`Les deux joueurs ont fait égalité ${joueur1} - ${joueur2} ! Quelles sont les chances pour une chose pareil arrive ?!`)
+}
+
+
