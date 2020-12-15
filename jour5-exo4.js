@@ -27,3 +27,4 @@ function play() {
         }
     })
 }
+play()
