@@ -11,10 +11,41 @@ function calculateAge(string) {
     var diff = date - Date.now();
     var age = new Date(diff);
     console.log("date :" + date);
-    console.log("diff :" +diff);
+    console.log("diff :" + diff);
     console.log("age :" + age);
-    console.log((Math.abs(age.getUTCFullYear() - 1970)) -1, "ans")
+    console.log((Math.abs(age.getUTCFullYear() - 1970)) - 1, "ans")
 }
 calculateAge("1993-01-22")
 
-// 03 
+// 03 Validator
+var prompt = require('prompt');
+function checkProfil() {
+    var profil = {
+        properties: {
+            username: {
+                pattern: /^[a-zA-Z\s\-]+$/,
+                message: 'Name must be only letters, spaces, or dashes',
+                required: true,
+            }
+            password: {
+                pattern: /^[a-zA-Z]+\d/,
+                hidden: true,
+                replace: '*',
+                required: true
+            },
+            get password() {
+                return this._password;
+            },
+            set password(value) {
+                this._password = value;
+            },
+        }
+    }
+    console.log('Command-line input received:');
+    console.log('  username: ' + result.username);
+    console.log('  password: ' + result.password);
+}
+prompt.start();
+
+
+checkProfil()
