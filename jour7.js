@@ -66,7 +66,7 @@ function swap(string) {
     }
     console.log(newString);
 }
-
 swap("Hello World")
+swap("Google Is My Friend !")
 
 
