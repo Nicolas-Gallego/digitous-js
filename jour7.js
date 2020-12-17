@@ -6,7 +6,7 @@ function sortLetters(string) {
     console.log(sorted.join(''));
 }
 sortLetters("Konexio");
-
+console.log("-------------------")
 
 
 // 02 - XOXO
@@ -33,7 +33,7 @@ function countEach(string) {
 }
 countEach("xox");
 countEach("xxxoooox");
-
+console.log("-------------------")
 // 03 - Palindrome
 console.log("03 - Palindrome");
 
@@ -51,7 +51,7 @@ function checkPal(string) {
 checkPal("raceCar");
 checkPal("laptop");
 checkPal("unDroleDeLordNu");
-
+console.log("-------------------")
 // 04 - Swap
 console.log("04 - Swap");
 
@@ -68,7 +68,7 @@ function swap(string) {
 }
 swap("Hello World");
 swap("Google Is My Friend !");
-
+console.log("-------------------")
 // Bonus 
 console.log("Bonus");
 
@@ -80,7 +80,7 @@ function makeItSpongeBob(string) {
     console.log(lowCaseStr.join(''))
 };
 makeItSpongeBob("Javascript is easy")
-
+console.log("-------------------")
 // Bonus II
 console.log("Bonus II")
 function compare(a, b) {
@@ -98,7 +98,7 @@ function sortLetters2(string) {
     console.log(sorted.join(''));
 }
 sortLetters2("Konexio");
-
+console.log("-------------------")
 // Bonus III
 console.log("Bonus III")
 
