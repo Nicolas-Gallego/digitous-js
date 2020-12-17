@@ -39,18 +39,34 @@ console.log("03 - Palindrome")
 
 function checkPal(string) {
     console.log(`Est-ce que \"${string}\” est un palindrome ?`)
-    var lowRegStr = string.toLowerCase();
-    var reverseStr = lowRegStr.split('').reverse().join(''); 
-    if (reverseStr === lowRegStr){
+    var lowedStr = string.toLowerCase();
+    var reverseStr = lowedStr.split('').reverse().join('');
+    if (reverseStr === lowedStr) {
         console.log("Palindrome !")
     }
     else {
         console.log("Nope")
     }
-  }
-  checkPal("raceCar");
-  checkPal("laptop");
-  checkPal("unDroleDeLordNu");
+}
+checkPal("raceCar");
+checkPal("laptop");
+checkPal("unDroleDeLordNu");
 
-  
+// 04 - Swap
+console.log("04 - Swap")
+
+function swap(string) {
+    var newString = "";
+    for (var i = 0; i < string.length; i++) {
+        if (string[i] === string[i].toLowerCase()) {
+            newString += string[i].toUpperCase();
+        } else {
+            newString += string[i].toLowerCase();
+        }
+    }
+    console.log(newString);
+}
+
+swap("Hello World")
+
 
