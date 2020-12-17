@@ -23,12 +23,12 @@ function countEach(string) {
         else if (string.charAt(i) === "o") {
             o += 1;
         }
-        else if (x === o) {
-            console.log("true");
-        }
-        else if (x !== o) {
-            console.log("false");
-        }
+    }
+    if (x === o) {
+        console.log("true");
+    }
+    else if (x !== o) {
+        console.log("false");
     }
 }
 countEach("xox");
@@ -80,5 +80,56 @@ function makeItSpongeBob(string) {
     console.log(lowCaseStr.join(''))
 };
 makeItSpongeBob("Javascript is easy")
+
+// Bonus II
+console.log("Bonus II")
+function compare(a, b) {
+    if (a.toLowerCase() > b.toLowerCase()) {
+        return 1;
+    }
+    if (a.toLowerCase() < b.toLowerCase()) {
+        return -1;
+    }
+    return 0;
+}
+function sortLetters2(string) {
+    var arr = string.split('');
+    var sorted = arr.sort(compare);
+    console.log(sorted.join(''));
+}
+sortLetters2("Konexio");
+
+// Bonus III
+console.log("Bonus III")
+
+function countEach2(string) {
+    console.log(`Autant de O que de X dans ${string} ?`);
+    var x = 0;
+    var o = 0;
+    var stringlength = string.length;
+    for (var i = 0; i <= stringlength; i++) {
+
+        if (string.charAt(i) === "x") {
+            x += 1;
+        }
+        else if (string.charAt(i) === "o") {
+            o += 1;
+        }
+    }
+    if (x + o !== stringlength){
+        console.log("Utiliser que des x ou des o")
+    }
+    else if (x === 0 && o === 0) {
+        console.log("Utiliser que des x ou des o")
+    }
+    else if (x === o) {
+        console.log("true");
+    }
+    else if (x !== o) {
+        console.log("false");
+    }
+}
+countEach2("xoxo");
+
 
 
