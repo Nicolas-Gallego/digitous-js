@@ -25,12 +25,12 @@ function getFact() {
 }
 getFact()
 
-// 03 - Pokemon
+
 function catchPokemon(number) {
-    request.get(`https://pokeapi.co/api/v2/pokemon/${number}`, function (err, res, body) {
+    request.get(`https://pokeapi.co/api/v2/pokemon-species/${number}`, function (err, res, body) {
         var pokemon = JSON.parse(body);
         console.log(pokemon.id)
-        console.log(pokemon.name)
+        console.log(pokemon.names[4].name)
     })
 }
-catchPokemon()
+catchPokemon(70)
